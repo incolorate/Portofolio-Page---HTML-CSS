@@ -194,9 +194,6 @@ footer ul {
   font-size: 1.2rem;
   text-align: center;
 }
-.reversed-button {
-  justify-content: start;
-}
 
 /* Projects */
 
@@ -307,5 +304,8 @@ img {
   }
   .button-container {
     justify-content: end;
+  }
+  .reversed-button {
+    justify-content: start;
   }
 }
