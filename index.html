@@ -7,10 +7,6 @@
     <link href="styles.css" rel="stylesheet" />
     <title>Negru Paul's Portfolio</title>
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap"
       rel="stylesheet"
     />
@@ -18,19 +14,19 @@
 
   <body>
     <main>
-      <nav>
-        <ul>
-          <li class="logo">
-            <h1>
-              <a href="#intro">
-                <span
-                  class="fa-solid fa-lines-leaning logo"
-                  aria-hidden="true"
-                ></span>
-                <span class="logo">N</span>egru Paul
-              </a>
-            </h1>
-          </li>
+      <nav class="nav-container">
+        <div>
+          <h1>
+            <a href="#intro">
+              <span class="fa-solid fa-lines-leaning" aria-hidden="true"></span>
+              <span class="logo">N</span>egru Paul
+            </a>
+          </h1>
+        </div>
+        <div class="menu-container">
+          <span class="fa-solid fa-bars" id="hamburger-menu"></span>
+        </div>
+        <ul class="nav-options">
           <li class="not-logo"><a href="#projects">Projects</a></li>
           <li class="not-logo"><a href="#intro">About</a></li>
           <li class="not-logo"><a href="#contact">Contact</a></li>
@@ -52,13 +48,6 @@
               <span class="fa-brands fa-square-github"></span>
             </a>
           </li>
-          <!-- TODO -->
-          <li class="not-logo">
-            <a href="TODO" target="_blank" class="button">Resume</a>
-          </li>
-          <button type="button" class="nav-button">
-            <span class="material-icons"> menu </span>
-          </button>
         </ul>
       </nav>
 
@@ -244,5 +233,6 @@
       src="https://kit.fontawesome.com/54783e8bb0.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./app.js"></script>
   </body>
 </html>
