@@ -8,3 +8,9 @@ menu.addEventListener("click", () => {
     navBar.style.display = "none";
   }
 });
+
+let toggleProjects = document.querySelector("#toggle-projects");
+
+toggleProjects.onclick = () => {
+  document.querySelector("#more-projects").style.display = "initial";
+};
