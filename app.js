@@ -12,5 +12,14 @@ menu.addEventListener("click", () => {
 let toggleProjects = document.querySelector("#toggle-projects");
 
 toggleProjects.onclick = () => {
-  document.querySelector("#more-projects").style.display = "initial";
+  let arrowUp = `<span class="fa-solid fa-angles-up"></span>`;
+  let arrowDown = `<span class="fa-solid fa-angles-down"></span>`;
+  if (toggleProjects.innerHTML == arrowUp) {
+    console.log("hello");
+    document.querySelector("#more-projects").style.display = "none";
+    toggleProjects.innerHTML = arrowDown;
+  } else {
+    document.querySelector("#more-projects").style.display = "initial";
+    toggleProjects.innerHTML = arrowUp;
+  }
 };

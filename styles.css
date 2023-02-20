@@ -273,6 +273,33 @@ img {
     display: none;
   }
 }
+/* More projects */
+#more-projects {
+  display: none;
+}
+#toggle-projects {
+  background: none;
+  border: none;
+  font-size: 3rem;
+  align-self: center;
+}
+
+.more-projects {
+  text-align: center;
+}
+.blueback #toggle-projects {
+  color: var(--grayish);
+  margin-left: 50%;
+  animation: mover 1s infinite alternate;
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
 
 @media (min-width: 550px) {
   article {
