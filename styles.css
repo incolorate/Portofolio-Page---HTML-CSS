@@ -221,6 +221,7 @@ footer {
 
 img {
   width: 100%;
+  z-index: 0;
 }
 #projects {
   padding: 4rem 1rem;
@@ -288,6 +289,14 @@ img {
   transition-delay: 4000ms;
 }
 /* Animations */
+
+.right {
+  z-index: 1;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1.1s;
+}
 .left {
   opacity: 0;
   filter: blur(5px);
@@ -295,12 +304,6 @@ img {
   transition: all 1s;
 }
 
-.right {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(100%);
-  transition: all 1s;
-}
 .show {
   opacity: 1;
   filter: blur(0);
