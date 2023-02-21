@@ -1,5 +1,5 @@
-let menu = document.querySelector("#hamburger-menu");
-let navBar = document.querySelector(".nav-options");
+const menu = document.querySelector("#hamburger-menu");
+const navBar = document.querySelector(".nav-options");
 
 menu.addEventListener("click", () => {
   if (navBar.style.display === "none") {

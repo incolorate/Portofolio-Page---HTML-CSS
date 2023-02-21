@@ -181,9 +181,10 @@ nav [class*="fa-"] {
 footer {
   margin: auto;
   text-align: center;
-  padding: 4rem 0;
+  padding: 1rem;
+  font-size: 1rem;
 }
-footer ul {
+.contactdiv ul {
   list-style-type: none;
   padding: 0;
   margin: 2rem 0;
@@ -263,6 +264,29 @@ img {
   border-radius: 25px;
   padding: 1rem;
 }
+/* About */
+
+#about {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1rem 1rem 5rem 1rem;
+}
+.fa-square-c {
+  color: #387373;
+}
+
+#langauges {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  font-size: 3rem;
+}
+
+.fa-html5 {
+  transition-delay: 4000ms;
+}
 /* Animations */
 .left {
   opacity: 0;
@@ -285,6 +309,11 @@ img {
 
 /* Responsive navbar */
 @media (min-width: 780px) {
+  #about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+  }
   #intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
