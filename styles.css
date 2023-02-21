@@ -70,9 +70,14 @@ a:hover {
 
 /* Intro */
 #intro {
-  padding: 4rem 1rem 10rem 1rem;
+  display: grid;
+  align-items: center;
+  padding: 1rem 1rem 5rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+#main-iamge {
+  display: none;
 }
 #intro p {
   font-size: 1rem;
@@ -127,6 +132,7 @@ a:hover {
 }
 
 nav {
+  background-color: var(--black);
   font-family: var(--mono);
   font-size: 80%;
   padding: 1rem;
@@ -257,9 +263,38 @@ img {
   border-radius: 25px;
   padding: 1rem;
 }
+/* Animations */
+.left {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.right {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
 
 /* Responsive navbar */
 @media (min-width: 780px) {
+  #intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  #main-iamge {
+    display: block;
+    max-height: 400px;
+    filter: invert(1);
+  }
   nav {
     max-width: 1200px;
     margin: 0 auto;

@@ -23,3 +23,19 @@ toggleProjects.onclick = () => {
     toggleProjects.innerHTML = arrowUp;
   }
 };
+
+// Animations
+
+const hiddenElementsLeft = document.querySelectorAll(".left");
+const hiddenElementsRight = document.querySelectorAll(".right");
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+hiddenElementsLeft.forEach((el) => observer.observe(el));
+hiddenElementsRight.forEach((el) => observer.observe(el));

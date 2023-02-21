@@ -49,16 +49,18 @@
       </nav>
 
       <section id="intro">
-        <h1>Building the Web, One Line at a Time</h1>
-        <h2>Hello, I'm <span>Negru Paul</span>.</h2>
-        <p>
-          As a recent career changer from pharmacy to frontend development, I'm
-          passionate about creating beautiful and functional websites that
-          enhance the online experience. With a focus on HTML, CSS, and
-          JavaScript, I'm constantly learning and improving my skills, and I'm
-          excited to share my knowledge with you. Join me on this journey as we
-          explore the world of web development together.
-        </p>
+        <div class="left">
+          <h1>Building the Web, One Line at a Time</h1>
+          <h2>Hello, I'm <span>Negru Paul</span>.</h2>
+          <p>
+            I have a passion for constantly learning, and I'm excited to share
+            my knowledge with you. Join me on this journey as we explore the
+            world of web development together.
+          </p>
+        </div>
+        <div class="right">
+          <img src="./img/Frame.svg" alt="guy programming" id="main-iamge" />
+        </div>
       </section>
 
       <div class="gradientbar"></div>
@@ -68,7 +70,7 @@
           <h2>Projects</h2>
 
           <article>
-            <div class="text">
+            <div class="text right">
               <h4>Latest Project</h4>
               <h3>Wordle clone</h3>
               <div class="blackbox">
@@ -114,11 +116,12 @@
               src="./img/Screenshot 2023-02-15 153422.png"
               alt="Screenshot of  Wordle"
               loading="lazy"
+              class="left"
             />
           </article>
 
           <article>
-            <div class="text reversedtext">
+            <div class="text reversedtext left">
               <h4>Games</h4>
               <h3>Rock Paper Scissors</h3>
               <div class="blackbox">
@@ -161,14 +164,15 @@
               </ul>
             </div>
             <img
-              class="reversedimg"
+              class="reversedimg right"
               src="./img/rock-paper-s.png"
-              alt="Screenshot of the Wall of Wonder."
+              alt="rock-paper-scissors"
+              loading="lazy"
             />
           </article>
 
           <article>
-            <div class="text">
+            <div class="text right">
               <h4>Working with API's</h4>
               <h3>Weather</h3>
               <div class="blackbox">
@@ -212,6 +216,7 @@
               </ul>
             </div>
             <img
+              class="left"
               src="./img/weather.png"
               alt="Screenshot of  Wordle"
               loading="lazy"
@@ -219,9 +224,9 @@
           </article>
           <div id="more-projects">
             <article>
-              <div class="text reversedtext">
-                <h4>Games</h4>
-                <h3>Rock Paper Scissors</h3>
+              <div class="text reversedtext left">
+                <h4>Web</h4>
+                <h3>Book catalog</h3>
                 <div class="blackbox">
                   <p>
                     Allows users to keep track of their personal book
@@ -259,7 +264,7 @@
                 </ul>
               </div>
               <img
-                class="reversedimg"
+                class="reversedimg right"
                 src="./img/library.png"
                 alt="Screenshot of the Wall of Wonder."
               />
@@ -269,7 +274,7 @@
               <div class="text">
                 <h4>Games</h4>
                 <h3>Etch a sketch</h3>
-                <div class="blackbox">
+                <div class="blackbox right">
                   <p>
                     This Etch A Sketch project uses JavaScript to create a
                     digital drawing board that allows users to draw with their
@@ -307,14 +312,15 @@
                 </ul>
               </div>
               <img
+                class="left"
                 src="./img/etcha.png  "
-                alt="Screenshot of  Wordle"
+                alt="etch-a-sketch board"
                 loading="lazy"
               />
             </article>
 
             <article>
-              <div class="text reversedtext">
+              <div class="text reversedtext left">
                 <h4>Web</h4>
                 <h3>Dashboard-project</h3>
                 <div class="blackbox">
@@ -352,9 +358,9 @@
                 </ul>
               </div>
               <img
-                class="reversedimg"
+                class="reversedimg right"
                 src="./img/dashboard.png"
-                alt="Screenshot of the Wall of Wonder."
+                alt="dashboard project image"
               />
             </article>
           </div>
