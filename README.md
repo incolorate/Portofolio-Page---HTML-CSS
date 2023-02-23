@@ -1,6 +1,6 @@
 ### Portfolio page
 
-This is my personal portfolio page, adapted from the design covered in the 'Getting Started with CSS' course on FrontEndMasters. The site primarily uses HTML and CSS, with the exception of fade-in animations and a responsive nav-bar.
+This is my personal portfolio page, adapted from the design covered in the ['Getting Started with CSS'](https://frontendmasters.com/courses/getting-started-css/) course on FrontEndMasters. The site primarily uses HTML and CSS, with the exception of fade-in animations and a responsive nav-bar.
 
 ## [Live preview](https://incolorate.github.io/portfolio/)
 
