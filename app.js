@@ -2,11 +2,7 @@ const menu = document.querySelector("#hamburger-menu");
 const navBar = document.querySelector(".nav-options");
 
 menu.addEventListener("click", () => {
-  if (navBar.style.display === "none") {
-    navBar.style.display = "flex";
-  } else {
-    navBar.style.display = "none";
-  }
+  navBar.classList.toggle("hidden");
 });
 
 let toggleProjects = document.querySelector("#toggle-projects");
@@ -30,7 +26,6 @@ const hiddenElementsLeft = document.querySelectorAll(".left");
 const hiddenElementsRight = document.querySelectorAll(".right");
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
     }
